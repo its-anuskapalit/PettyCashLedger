@@ -14,29 +14,9 @@ namespace DigitalPettyCashLedger
     {
         string GetSummary();
     }
+
     #endregion
     #region Transaction class
-    /// <summary>
-    /// Represents the base entity for all financial transactions.
-    /// <para>
-    /// This abstract class defines the common properties such as Id, Date, Amount and Description which are shared by both income and expense transactions.
-    /// It enforces implementation of the GetSummary method to guarantee reporting
-    /// It has a GetSummary method for displaying the report
-    /// consistency across derived transaction types.
-    /// </para>
-    /// <returns>
-    /// Returns a formatted transaction summary when implemented by derived classes.
-    /// </returns>
-    /// </summary>
-    public abstract class Transaction : IReportable
-    {
-        public int Id { get; set; }
-        public DateTime Date { get; set; }
-        public decimal Amount { get; set; }
-        public string Description { get; set; }
-
-        public abstract string GetSummary();
-    }
     #endregion
     #region Chid class IncomeTransaction
     /// <summary>
@@ -99,7 +79,24 @@ namespace DigitalPettyCashLedger
         private List<T> transactions = new List<T>();
         public void AddEntry(T entry)
         {
-            transactions.Add(entry);
+            try
+            {
+                if (entry == null)
+                    throw new ArgumentNullException("Transaction cannot be null.");
+
+                if (entry.Amount <= 0)
+                    throw new Exception("Amount must be greater than zero.");
+
+                transactions.Add(entry);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while adding transaction: " + ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("AddEntry operation completed.");
+            }
         }
         //method to add transactions by the date
         public List<T> GetTransactionsByDate(DateTime date)
@@ -117,14 +114,26 @@ namespace DigitalPettyCashLedger
         // method to calculate the total amount
         public decimal CalculateTotal()
         {
-            List<Transaction> Results = new List<Transaction>();
-
-            foreach (T t in transactions)
+            try
             {
-               Results.Add(t);
+                List<Transaction> Results = new List<Transaction>();
+
+                foreach (T t in transactions)
+                {
+                    Results.Add(t);
+                }
+                //calling the helper method
+                return TransactionCalculator.CalculateTotal(Results);
             }
-            //calling the helper method
-            return TransactionCalculator.CalculateTotal(Results);
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while calculating total: " + ex.Message);
+                return 0;
+            }
+            finally
+            {
+                Console.WriteLine("CalculateTotal executed.");
+            }
         }
         //method returning the transactions
         public List<T> GetAll()
