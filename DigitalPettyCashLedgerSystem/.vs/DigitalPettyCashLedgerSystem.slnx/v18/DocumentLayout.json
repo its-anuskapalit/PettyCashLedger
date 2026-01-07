@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD99E68-52D5-48E8-89A0-31D198AFB495}|DigitalPettyCashLedgerSystem.csproj|d:\\dotnet\\digitalpettycashledgersystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD99E68-52D5-48E8-89A0-31D198AFB495}|DigitalPettyCashLedgerSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{300A1930-32BF-46C2-85B0-5EB8333DEE31}|Solution Items{300A1930-32BF-46C2-85B0-5EB8333DEE31}|D:\\Dotnet\\DigitalPettyCashLedgerSystem\\TransactionCalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{300A1930-32BF-46C2-85B0-5EB8333DEE31}|Solution Items{300A1930-32BF-46C2-85B0-5EB8333DEE31}|solutionrelative:TransactionCalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD99E68-52D5-48E8-89A0-31D198AFB495}|DigitalPettyCashLedgerSystem.csproj|d:\\dotnet\\digitalpettycashledgersystem\\ledgersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD99E68-52D5-48E8-89A0-31D198AFB495}|DigitalPettyCashLedgerSystem.csproj|solutionrelative:ledgersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LedgerSystem.cs",
+              "DocumentMoniker": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\LedgerSystem.cs",
+              "RelativeDocumentMoniker": "LedgerSystem.cs",
+              "ToolTip": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\LedgerSystem.cs",
+              "RelativeToolTip": "LedgerSystem.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:03:08Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionCalculator.cs",
+              "DocumentMoniker": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\TransactionCalculator.cs",
+              "RelativeDocumentMoniker": "TransactionCalculator.cs",
+              "ToolTip": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\TransactionCalculator.cs",
+              "RelativeToolTip": "TransactionCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T09:22:04.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Dotnet\\DigitalPettyCashLedgerSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:02:01.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

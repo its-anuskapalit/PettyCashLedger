@@ -1,0 +1,63 @@
+## Build Results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+
+## OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Log files
+*.log
+
+## Debug / Release folders
+Debug/
+Release/
+x64/
+x86/
+
+## NuGet packages
+*.nupkg
+packages/
+.nuget/
+
+## Test Results
+TestResults/
+
+## Temporary files
+*.tmp
+*.bak
+*.swp
+*.old
+
+## Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+## Rider
+.idea/
+
+## Publish output
+publish/
+
+## Local database files
+*.mdf
+*.ldf
+
+## Secrets / environment files
+.env
+appsettings.Development.json
+appsettings.Local.json
